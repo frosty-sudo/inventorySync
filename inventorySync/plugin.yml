@@ -5,3 +5,5 @@ author: Frosty
 description: A plugin that shares a single inventory between the whole server.
 api-version: 1.13
 api: "1.13"
+commands:
+  toggleHotbar:

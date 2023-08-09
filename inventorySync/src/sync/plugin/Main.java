@@ -30,7 +30,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 public class Main extends JavaPlugin {
 
 	
-	
+	public static boolean hotbar;
 	public static Inventory inv;
 	private static Main instance;
 	public static Main getInstance() {
@@ -61,9 +61,11 @@ public class Main extends JavaPlugin {
         if (command.getName().equalsIgnoreCase("command")) {
             sender.sendMessage("This can be changed");
             return true;
-        }
+        } 
         //Add commands here
-        
+        else if(command.getName().equalsIgnoreCase("toggleHotbar")) {
+        	hotbar = hotbar ? false : true;
+        }
         
         
         return false;
