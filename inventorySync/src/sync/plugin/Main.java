@@ -37,6 +37,7 @@ public class Main extends JavaPlugin {
 		return instance;
 	}
 	
+	
 
 	public void onEnable() {
 		instance = this;
